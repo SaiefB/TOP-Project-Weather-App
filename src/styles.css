@@ -1,6 +1,29 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  border: 1px solid var(--primary-white);
   box-sizing: border-box;
+  color: var(--primary-white);
+}
+
+:root {
+  /* Primary Colors */
+  --primary-white: #fff;
+}
+
+body {
+  height: 97vh;
+  background-image: url("./assets/images/backgroundImg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bannerDiv {
+  display: flex;
+  gap: 5%;
+}
+
+header {
+  width: 70%;
+  font-size: 2;
 }
