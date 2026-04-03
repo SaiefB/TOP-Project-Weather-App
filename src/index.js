@@ -3,9 +3,11 @@
 
 import "./styles.css";
 
-import {} from "./modules/DOM";
+import { submitSearch } from "./modules/DOM";
 
-document.addEventListener("DomContentLoaded", () => {
+console.log("index.js working");
+
+document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded and parsed");
-  //functions
+  submitSearch();
 });
