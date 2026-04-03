@@ -1,4 +1,11 @@
+//index.js
+// Entry point for the application
+
 import "./styles.css";
 
-const unusedVariable =
-  "This variable is not used anywhere in the code - for ESLint Validation";
+import {} from "./modules/DOM";
+
+document.addEventListener("DomContentLoaded", () => {
+  console.log("DOM fully loaded and parsed");
+  //functions
+});
