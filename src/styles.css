@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid var(--primary-white);
+  /* border: 1px solid var(--primary-white); */
   box-sizing: border-box;
   color: var(--primary-white);
 }
@@ -21,20 +21,37 @@ body {
 
 .bannerDiv {
   display: flex;
-  gap: 5%;
 }
 
 header {
   width: 70%;
-  font-size: 2;
+  font-size: 50px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.bannerDivRight {
+  padding-top: 45px;
+  padding-left: 220px;
+
+  width: 30%;
+  display: flex;
+  flex-direction: row;
 }
 
 input {
   color: var(--primary-black);
   padding: 3px;
+  height: 25px;
 }
 
 button {
   color: var(--primary-black);
   padding: 3px;
+  height: 25px;
+}
+
+.weatherData {
+  height: 300px;
+  color: var(--primary-white);
 }
