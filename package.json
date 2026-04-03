@@ -1,7 +1,7 @@
 {
-  "name": "project-restaurant-page",
+  "name": "top-project-weather-app",
   "version": "1.0.0",
-  "description": "A responsive restaurant webpage built with HTML, CSS, and JavaScript, showcasing menu items and services. It uses npm for package management and Webpack for asset bundling. This project emphasizes clean, modular code and includes a .gitignore for a professional repository.",
+  "description": "A basic weather app created following The Odin Project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
