@@ -15,7 +15,7 @@ body {
   height: 97vh;
   background-image: url("./assets/images/backgroundImg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .bannerDiv {
