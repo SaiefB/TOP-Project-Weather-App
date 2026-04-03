@@ -9,6 +9,7 @@
 :root {
   /* Primary Colors */
   --primary-white: #fff;
+  --primary-black: #000000;
 }
 
 body {
@@ -26,4 +27,14 @@ body {
 header {
   width: 70%;
   font-size: 2;
+}
+
+input {
+  color: var(--primary-black);
+  padding: 3px;
+}
+
+button {
+  color: var(--primary-black);
+  padding: 3px;
 }
