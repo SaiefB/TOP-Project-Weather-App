@@ -2,6 +2,7 @@
 // Handles DOM manipulation
 
 //Imports
+import { fetchWeatherData } from "./api";
 
 console.log("DOM.js working");
 
@@ -17,7 +18,7 @@ function submitSearch() {
     console.log(`goBtn clicked...`);
     const searchTerm = searchInput.value || "London, UK";
     console.log(`searchTerm saved as: ${searchTerm}`);
-    //fetchAPI()
+    fetchWeatherData(searchTerm);
   });
 }
 

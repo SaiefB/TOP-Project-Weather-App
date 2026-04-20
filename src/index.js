@@ -10,4 +10,5 @@ console.log("index.js working");
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded and parsed");
   submitSearch();
+  console.log("submit search function loaded");
 });
