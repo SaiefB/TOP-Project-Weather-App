@@ -22,6 +22,11 @@ async function fetchWeatherData(term) {
     })
     .then((data) => {
       console.log(`Weather data for ${searchTerm}:`, data);
+      // will have to figure out how to save the data to variables here and then implement them to the DOM
+      const condition = data.currentConditions.conditions;
+      console.log(`Current Condition for ${searchTerm}: `, condition);
+      const temperature = data.currentConditions.temp;
+      console.log(`Current temperature for ${searchTerm}:`, temperature);
     })
     .catch((error) => {
       console.error("Error fetching weather data:", error);
