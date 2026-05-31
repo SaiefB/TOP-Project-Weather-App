@@ -59,5 +59,5 @@ button {
 .main-weather-display-info {
   margin-top: 150px;
   margin-left: 100px;
-  margin-right: 400px;
+  width: 500px;
 }
