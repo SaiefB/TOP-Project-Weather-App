@@ -14,11 +14,13 @@ const searchInput = document.querySelector(".searchInput");
 
 //function submitSearch - to send input value to api fetch function
 function submitSearch() {
-  goBtn.addEventListener("click", () => {
-    console.log(`goBtn clicked...`);
+  goBtn.addEventListener("click", async () => {
+    console.log("goBtn clicked and input value is: ", searchInput.value);
     const searchTerm = searchInput.value || "London, UK";
     console.log(`searchTerm saved as: ${searchTerm}`);
-    fetchWeatherData(searchTerm);
+    const data = await fetchWeatherData(searchTerm);
+    //update the DOM here
+    weatherData.textContent = data.currentConditions.temp;
   });
 }
 
