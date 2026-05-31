@@ -2,37 +2,6 @@
 // Handles all fetch calls to the weather API
 
 // function to fetch weather data
-/* async function fetchWeatherData(term) {
-  const searchTerm = term;
-
-  fetch(
-    `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchTerm}?unitGroup=uk&contentType=json&key=2HU4R9TR5QED9H8S3DP86YZB6`,
-    {
-      method: "GET",
-      headers: {},
-    },
-  )
-    .then((response) => {
-      if (!response.ok) {
-        return response.text().then((text) => {
-          throw new Error(text);
-        });
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(`Weather data for ${searchTerm}:`, data);
-      // will have to figure out how to save the data to variables here and then implement them to the DOM
-      const condition = data.currentConditions.conditions;
-      console.log(`Current Condition for ${searchTerm}: `, condition);
-      const temperature = data.currentConditions.temp;
-      console.log(`Current temperature for ${searchTerm}:`, temperature);
-    })
-    .catch((error) => {
-      console.error("Error fetching weather data:", error);
-    });
-} */
-
 async function fetchWeatherData(term) {
   const response = await fetch(
     `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${term}?unitGroup=uk&contentType=json&key=2HU4R9TR5QED9H8S3DP86YZB6`,

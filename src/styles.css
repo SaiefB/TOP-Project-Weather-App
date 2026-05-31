@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid var(--primary-white); */
+  border: 1px solid var(--primary-white);
   box-sizing: border-box;
   color: var(--primary-white);
 }
@@ -51,7 +51,13 @@ button {
   height: 25px;
 }
 
-.weatherData {
+/* .weatherData {
   height: 300px;
   color: var(--primary-white);
+} */
+
+.main-weather-display-info {
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-right: 400px;
 }
