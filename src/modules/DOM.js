@@ -8,10 +8,12 @@ console.log("DOM.js working");
 
 // ----------------------------------------------------------
 // Collect DOM Elements
-const weatherData = document.querySelector(".weatherData");
 const condition = document.querySelector(".condition");
 const location = document.querySelector(".location");
 const degrees = document.querySelector(".degrees");
+const feelsLike = document.querySelector(".feelsLike");
+const wind = document.querySelector(".wind");
+const humidity = document.querySelector(".humidity");
 const goBtn = document.querySelector(".searchButton");
 const searchInput = document.querySelector(".searchInput");
 
@@ -22,11 +24,14 @@ function submitSearch() {
     const searchTerm = searchInput.value || "London, UK";
     console.log(`searchTerm saved as: ${searchTerm}`);
     const data = await fetchWeatherData(searchTerm);
-    console.log(`data: ${data}`);
+    console.log("data: ", data);
     //update the DOM here
     condition.textContent = data.currentConditions.conditions;
-    location.textContent = data.address;
+    location.textContent = data.resolvedAddress;
     degrees.textContent = data.currentConditions.temp;
+    feelsLike.textContent = `FEELS LIKE: ${data.currentConditions.feelslike}`;
+    wind.textContent = `WIND: ${data.currentConditions.windspeed}MPH`;
+    humidity.textContent = `HUMIDITY: ${data.currentConditions.humidity}%`;
   });
 }
 
